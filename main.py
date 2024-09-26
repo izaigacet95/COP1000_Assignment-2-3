@@ -1,14 +1,21 @@
 # Furniture.py - This program calculates profits and sales prices for a furniture company.
 
-itemName = "TV Stand"
-retailPrice = 325.00
-wholesalePrice = 200.00
+item_name = ("TV Stand")
+retail_price = float(325.00)
+wholesale_price = 200.00
 
-# Write your assignment statements here for profit, salePrice, and saleProfit
+# Calculate the profit
+profit = retail_price - wholesale_price
 
-print("Item Name: " + itemName)
-print("Retail Price: $" + str(retailPrice))
-print("Wholesale Price: $" + str(wholesalePrice))
-print("Profit: $" + str(profit))
-print("Sale Price: $" + str(salePrice))
-print("Sale Profit: $" + str(saleProfit))
+# Calculate the sale price (25% off)
+sale_price = retail_price * 0.75
+
+# Calculate the profit when sold at the sale price
+sale_profit = sale_price - wholesale_price
+
+print("item_name: " + item_name)
+print("retail_price: $" + str(retail_price))
+print("wholesale_price: $" + str(wholesale_price))
+print("profit: $" + str(profit))
+print("sale_price: $" + str(sale_price))
+print("sale_profit: $" + str(sale_profit))
